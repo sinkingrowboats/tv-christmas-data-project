@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Made for TV Christmas Proejct</title>
+	<link rel="stylesheet" type="text/css" href="netflixstyles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<svg style="display: none" xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+  		<defs>
+    		<filter id="f1">
+      			<feGaussianBlur id="blur1" stdDeviation="0"/>
+      			<animate id="animate1" attributeName="stdDeviation" xlink:href="#blur1"
+                   from="0" to="4.5" begin="" dur=".4s" fill="freeze"/>
+                <animate id="animate2" attributeName="stdDeviation" xlink:href="#blur1"
+                   from="4.5" to="0" begin="" dur=".4s" fill="freeze"/>
+    		</filter>
+  		</defs>
+	</svg>
+	<div id='content-container'>
+		<section id="nav">
+			<p id="heading-title">The Made For TV Christmas Project <!--<span class="titlespan" id="netflixN">N</span>etflix <span class="titlespan">C</span>hristmas <span class="titlespan">F</span>ilm <span class="titlespan">P</span>roject --></p>
+		</section>
+
+		<section class="temp-padding">
+		</section>
+
+		<section id="graph">
+		</section>
+		
+
+		<!-- <div id="circletestsection">
+			<svg>
+			<defs>
+			<pattern id="pattern3" height="100%" width="100%"
+	         patternContentUnits="objectBoundingBox" 
+	         viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+	    		<image height="1" width="1"  preserveAspectRatio="xMidYMid slice" 
+	           xlink:href="img/christmas_prince_lead_thumb_512.png"></image>
+	          </pattern>
+	         </defs>
+	        <circle id='circletest' cx="200" cy="200" r="80" fill="url(#pattern3)"/>
+	        </svg>
+		</div> -->
+	</div>
+
+
+	<div style="display: none" id="fade-div" display="none">
+		<div id="movie-plate-div">
+			<div id="plate-top">
+				<div id="xbox"><img width="35px" src="img/icon/grey-x-50.png"/></div>
+				<div id="plate-title">To All the Boys I've Loved</div>
+			</div>
+			<div id="plate-bottom">
+				<div id="plate-banner"><img width="275px" src=""/></div>
+				<div id="banner-desc">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						 <!--<a href="#">Read the full review ></a>-->
+						</p>
+					</div>
+					<div id="desc-grades">
+						<div id="quality-grade"><h3>-10.0</h3><p>QUALITY</p></div>
+						<div id="attractive-grade"><h3>-10.0</h3><p>HOTNESS</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="d3/d3.min.js"></script>
+	<script src="d3/d3_sam.js"></script>
+	<script src="attractive_v_quality.js"></script>
+</body>
+</html>
+
